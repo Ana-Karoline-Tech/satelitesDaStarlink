@@ -1,16 +1,46 @@
-# React + Vite
+# 🛰️ Starlink Satellite Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um rastreador em tempo real dos satélites Starlink, utilizando dados oficiais da SpaceX e visualização interativa em mapa-múndi.
 
-Currently, two official plugins are available:
+## 🚀 Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Este projeto é uma aplicação web desenvolvida com **React** e **Leaflet** que consome a API da SpaceX para exibir a localização atual da constelação de satélites Starlink. O objetivo é fornecer uma interface visual e intuitiva para monitorar a posição dos satélites em órbita.
 
-## React Compiler
+## ✨ Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Mapa Mundial Interativo:** Visualização em tempo real de satélites sobre um mapa temático (Dark Mode).
+- **Dados Reais:** Integração direta com a API da SpaceX (`/v4/starlink`).
+- **Estatísticas ao Vivo:** Contador de satélites totais vs. satélites com posição rastreável.
+- **Paginação Dinâmica:** Carregamento sob demanda de mais satélites para otimização de performance.
+- **Interface Futurista:** UI estilizada com temática espacial e elementos visuais modernos.
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React 19](https://react.dev/) - Biblioteca JavaScript para construção de interfaces.
+- [Vite](https://vitejs.dev/) - Build tool ultra-rápida.
+- [Leaflet](https://leafletjs.com/) & [React-Leaflet](https://react-leaflet.js.org/) - Mapas interativos.
+- [SpaceX API](https://github.com/r-spacex/SpaceX-API) - Fonte de dados dos satélites.
+- [Vanilla CSS] - Estilização personalizada.
+
+## 🏁 Como Rodar o Projeto
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/satelites-starlink.git
+   ```
+
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
+
+3. **Inicie o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Acesse no navegador:**
+   O projeto estará rodando em `http://localhost:5173`.
+
+---
+Desenvolvido como projeto de estudo sobre React e integração de APIs.
