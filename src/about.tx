@@ -1,0 +1,45 @@
+✦ Este projeto é um rastreador em tempo real dos satélites Starlink. Ele consome dados oficiais da API da SpaceX e os visualiza em um mapa
+  interativo mundial.
+
+  Do que se trata o projeto?
+  O aplicativo, chamado "Satélites da Starlink", permite:
+   * Visualizar a posição geográfica (latitude e longitude) de centenas de satélites.
+   * Interagir com um mapa-múndi temático (Dark Mode).
+   * Carregar dados de forma paginada (botão "Carregar mais").
+   * Ver estatísticas em tempo real, como o total de satélites em órbita versus os que possuem posição rastreável no momento.
+
+  ---
+
+  O que você precisa aprender para desenvolver ele do zero?
+
+  Para construir este projeto, você deve focar nos seguintes pilares:
+
+  1. React (O Coração do App)
+   * Componentes: Como dividir a interface em partes reutilizáveis.
+   * Hooks (useState e useEffect): Essenciais para gerenciar os dados dos satélites e disparar a busca de informações quando o app carrega.
+   * Hooks de Referência (useRef): Usado aqui para controlar a inicialização e evitar buscas duplicadas.
+
+  2. Integração com APIs (Consumo de Dados)
+   * Fetch API: Como fazer requisições HTTP (especificamente o método POST com corpo JSON) para buscar dados externos.
+   * Processamento de JSON: Como transformar a resposta da API em listas que o React consiga exibir.
+
+  3. Mapas Interativos (Leaflet)
+   * Leaflet & React-Leaflet: A biblioteca principal para renderizar o mapa.
+   * Camadas e Marcadores: Como colocar ícones personalizados (como o emoji 🛰️) em coordenadas específicas no mapa.
+   * Popups: Como exibir detalhes de um satélite ao clicar nele.
+
+  4. CSS Moderno
+   * Layout (Flexbox/Grid): Para organizar o cabeçalho, as estatísticas e o mapa.
+   * Estilização: Criação de efeitos visuais como textos com degradê e sombras neon para dar o aspecto futurista/espacial.
+
+  5. Ferramentas de Desenvolvimento
+   * Vite: O "motor" que roda o projeto durante o desenvolvimento e faz o build final.
+   * npm ou node: Para gerenciar as bibliotecas (dependencies) que o projeto usa.
+
+  Por onde começar?
+  Se você estiver começando agora, o caminho ideal seria:
+   1. Aprender o básico de HTML e CSS.
+   2. Entender JavaScript Moderno (ES6+), focando em fetch e map.
+   3. Fazer um tutorial básico de React.
+   4. Tentar replicar a lógica de busca de dados (o fetch dentro de StarlinkList.jsx) antes de tentar colocar o mapa.
+   

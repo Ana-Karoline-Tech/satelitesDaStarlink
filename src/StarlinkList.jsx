@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react"
+﻿import { useEffect, useState, useRef } from "react"
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
@@ -99,7 +99,14 @@ export default function StarlinkList() {
             <TileLayer url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png" />
             {comPosicao.map((sat) => (
                 <Marker key={sat.id} position={[sat.latitude, sat.longitude]} icon={satIcon}>
-                <Popup>{/* mesmo conteúdo de antes */}</Popup>
+                <Popup>
+                    <div className="popup-content">
+                        <h3>{sat.spaceTrack?.OBJECT_NAME || 'Sem Nome'}</h3>
+                        <p><strong>Versão:</strong> {sat.version || 'N/A'}</p>
+                        <p><strong>Lat:</strong> {sat.latitude.toFixed(2)}</p>
+                        <p><strong>Long:</strong> {sat.longitude.toFixed(2)}</p>
+                    </div>
+                </Popup>
                 </Marker>
             ))}
             </MapContainer>
@@ -116,4 +123,3 @@ export default function StarlinkList() {
         </div>
         );
 }
-

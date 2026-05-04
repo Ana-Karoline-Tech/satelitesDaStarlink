@@ -1,4 +1,4 @@
-* { box-sizing: border-box; }
+﻿* { box-sizing: border-box; }
 
 body {
 margin: 0; padding: 0;
@@ -56,3 +56,32 @@ border: none; border-radius: 10px; cursor: pointer;
 
 .counter { color: #94a3b8; font-size: 14px; }
 .counter strong { color: #60a5fa; }
+
+/* Estilos personalizados para o conteúdo do Popup */
+.popup-content {
+    min-width: 180px;
+    padding: 4px;
+}
+
+.popup-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #00d2ff; /* Azul brilhante/Ciano */
+    text-shadow: 0 0 8px rgba(0, 210, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 6px;
+    font-weight: 700;
+}
+
+.popup-content p {
+    margin: 6px 0;
+    font-size: 13px;
+    color: #cbd5e1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-content strong {
+    color: #94a3b8;
+    font-weight: 500;
+}
